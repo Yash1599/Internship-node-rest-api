@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Credence Analytics</title>
+  </head>
+  <body>
+    <h1>Credence Analytics (Movies)</h1>
+    <form action="/movies" method="POST">
+      <input type="text" placeholder="Movie name" name="Movie name" />
+      <input type="text" placeholder="Movie Image File" name="Movie-Image" />
+      <input type="text" placeholder="Movie description" name="Movie" />
+      <button type="submit">Submit</button>
+    </form>
+    <%= movie% =>
+    <h2>Movies</h2>
+
+    <ul class="movies">
+      <!-- Loop through quotes -->
+      <% for(var i = 0; i < movie.length; i++) {%>
+      <li class="quote">
+        <!-- Output name from the iterated quote object -->
+        <span><%= movie[i].Movie name %></span>:
+        <!-- Output quote from the iterated quote object -->
+        <span><%= quotes[i].Movie %></span>
+      </li>
+      <% } %>
+    </ul>
+  </body>
+</html>
